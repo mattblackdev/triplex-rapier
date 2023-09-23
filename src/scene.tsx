@@ -1,7 +1,10 @@
+import { useRapier } from "@react-three/rapier";
 import Box from "./components/box";
 import Cylinder from "./components/cylinder";
 
 export default function Scene() {
+  const rapier = useRapier();
+  console.log({ rapier });
   return (
     <>
       <Box

@@ -1,5 +1,6 @@
 import { Physics } from "@react-three/rapier";
 
 export default function Provider({ children }: { children: React.ReactNode }) {
-	return <Physics>{children}</Physics>;
+  console.log("Provider providing");
+  return <Physics>{children}</Physics>;
 }
